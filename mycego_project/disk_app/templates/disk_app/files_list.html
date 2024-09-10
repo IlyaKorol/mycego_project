@@ -1,0 +1,6 @@
+<h2>Список файлов</h2>
+<ul>
+    {% for file in files %}
+        <li>{{ file.name }} - <a href="{{ file.file }}?download=true">Скачать</a></li>
+    {% endfor %}
+</ul>

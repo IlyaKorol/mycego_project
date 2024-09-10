@@ -1,0 +1,6 @@
+<h2>Введите публичную ссылку на Яндекс.Диск</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Показать файлы</button>
+</form>
